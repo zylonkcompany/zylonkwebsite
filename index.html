@@ -59,7 +59,7 @@
                 // Função para carregar traduções
                 async function loadTranslations(language) {
                     try {
-                        const response = await fetch("translations/translations.json");
+                        const response = await fetch("translations.json");
                         const translations = await response.json();
                         applyTranslations(translations[language]);
                     } catch (error) {
