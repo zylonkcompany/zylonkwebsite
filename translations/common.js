@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const response = await fetch(`translations.json`);
             if (!response.ok) throw new Error("Traduções não encontradas");
             const translations = await response.json();
-            applyTranslations(translations);
+            applyTranslations(translations[language]);  // Ajustado para pegar traduções específicas do idioma
         } catch (error) {
             console.error("Erro ao carregar traduções:", error);
         }

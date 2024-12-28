@@ -1,30 +1,47 @@
 {
-    "en": {
-      "welcome_message": "Welcome to the official ZylonkOS website",
-      "intro_text": "Where you can find information about ZylonkOS and the download here.",
-      "working_message": "We are still working, learn more on our channel: Zylonkcompany.",
-      "preview_text": "Images of the preview version",
-      "downloads_message": "Sorry, but we're still working on it. Downloads are not available at the moment.",
-      "about_title": "About ZylonkOS",
-      "about_text": "ZylonkOS is a versatile system catering to a wide range of users, offering support for diverse hardware architectures while prioritizing robust security measures. Ideal for low-powered personal computers, it ensures reliable performance and protection against potential threats. With its user-centric design, it provides a seamless computing experience for all users, regardless of their hardware specifications."
-    },
-    "pt-br": {
-      "welcome_message": "Bem-vindo ao site oficial do ZylonkOS",
-      "intro_text": "Onde você pode encontrar informações sobre o ZylonkOS e o download aqui.",
-      "working_message": "Ainda estamos trabalhando, saiba mais no nosso canal: Zylonkcompany.",
-      "preview_text": "Imagens da versão de pré-visualização",
-      "downloads_message": "Desculpe, mas ainda estamos trabalhando nisso. Os downloads não estão disponíveis no momento.",
-      "about_title": "Sobre o ZylonkOS",
-      "about_text": "ZylonkOS é um sistema versátil, atendendo a uma ampla gama de usuários, oferecendo suporte para diversas arquiteturas de hardware enquanto prioriza medidas de segurança robustas. Ideal para computadores pessoais com baixo consumo de energia, garantindo desempenho confiável e proteção contra ameaças potenciais. Com seu design centrado no usuário, proporciona uma experiência computacional sem interrupções para todos os usuários, independentemente das especificações do hardware."
-    },
-    "es": {
-      "welcome_message": "Bienvenido al sitio web oficial de ZylonkOS",
-      "intro_text": "Aquí puedes encontrar información sobre ZylonkOS y la descarga.",
-      "working_message": "Todavía estamos trabajando, aprende más en nuestro canal: Zylonkcompany.",
-      "preview_text": "Imágenes de la versión preliminar",
-      "downloads_message": "Lo siento, pero todavía estamos trabajando en ello. Las descargas no están disponibles en este momento.",
-      "about_title": "Sobre ZylonkOS",
-      "about_text": "ZylonkOS es un sistema versátil que atiende a una amplia gama de usuarios, ofreciendo soporte para diversas arquitecturas de hardware mientras prioriza medidas de seguridad sólidas. Ideal para computadoras personales de bajo consumo, garantiza un rendimiento confiable y protección contra amenazas potenciales. Con su diseño centrado en el usuario, proporciona una experiencia informática sin interrupciones para todos los usuarios, independientemente de las especificaciones de hardware."
-    }
+  "en": {
+    "welcome_message": "ZylonkOS Website",
+    "contact_button": "Contact",
+    "about_button": "About",
+    "downloads_button": "Downloads",
+    "safiraos_button": "SafiraOS",
+    "language_selector": "Select Language",
+    "welcome_message_text": "Welcome to the official ZylonkOS website where you can find information about ZylonkOS and the download here.",
+    "working_message": "We are still working, learn more on our channel: Zylonkcompany.",
+    "preview_text": "Images of the preview version:",
+    "sorry_message": "Sorry, but we're still working on it. Downloads are not available at the moment.",
+    "introducing_safiraos": "Introducing SafiraOS",
+    "safiraos_description": "The new operating system from the Zylonk family! A completely new system designed for smartphones and tablets, based on ZylonkOS, offering a friendly and wonderful interface, lightweight for all mobile devices.",
+    "email": "e-mail: zylonkcompany@gmail.com"
+  },
+  "pt-br": {
+    "welcome_message": "Site ZylonkOS",
+    "contact_button": "Contato",
+    "about_button": "Sobre",
+    "downloads_button": "Downloads",
+    "safiraos_button": "SafiraOS",
+    "language_selector": "Selecione o Idioma",
+    "welcome_message_text": "Bem-vindo ao site oficial do ZylonkOS, onde você pode encontrar informações sobre o ZylonkOS e o download aqui.",
+    "working_message": "Ainda estamos trabalhando, saiba mais em nosso canal: Zylonkcompany.",
+    "preview_text": "Imagens da versão de pré-visualização:",
+    "sorry_message": "Desculpe, mas ainda estamos trabalhando nisso. Os downloads não estão disponíveis no momento.",
+    "introducing_safiraos": "Apresentando o SafiraOS",
+    "safiraos_description": "O novo sistema operacional da família Zylonk! Um sistema completamente novo, projetado para smartphones e tablets, baseado no ZylonkOS, oferecendo uma interface amigável e maravilhosa, leve para todos os dispositivos móveis.",
+    "email": "e-mail: zylonkcompany@gmail.com"
+  },
+  "es": {
+    "welcome_message": "Sitio web de ZylonkOS",
+    "contact_button": "Contacto",
+    "about_button": "Acerca de",
+    "downloads_button": "Descargas",
+    "safiraos_button": "SafiraOS",
+    "language_selector": "Seleccionar idioma",
+    "welcome_message_text": "Bienvenido al sitio web oficial de ZylonkOS, donde puedes encontrar información sobre ZylonkOS y la descarga aquí.",
+    "working_message": "Aún estamos trabajando, aprende más en nuestro canal: Zylonkcompany.",
+    "preview_text": "Imágenes de la versión de vista previa:",
+    "sorry_message": "Lo sentimos, pero aún estamos trabajando en ello. Las descargas no están disponibles por el momento.",
+    "introducing_safiraos": "Presentando SafiraOS",
+    "safiraos_description": "¡El nuevo sistema operativo de la familia Zylonk! Un sistema completamente nuevo, diseñado para teléfonos inteligentes y tabletas, basado en ZylonkOS, ofreciendo una interfaz amigable y maravillosa, ligera para todos los dispositivos móviles.",
+    "email": "correo electrónico: zylonkcompany@gmail.com"
   }
-  
+}
