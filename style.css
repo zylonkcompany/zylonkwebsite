@@ -50,30 +50,6 @@ a.button:hover {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
-.search-container {
-    position: relative; /* Define um contexto para o ícone */
-    width: 300px; /* Largura total do container */
-}
-
-.search-bar {
-    width: 100%; /* Ocupa toda a largura do container */
-    height: 40px;
-    padding: 10px 40px 10px 10px; /* Espaçamento interno (ajuste para o ícone) */
-    font-size: 16px;
-    border: 2px solid #007bff;
-    border-radius: 30px;
-    outline: none;
-}
-
-.search-icon {
-    position: absolute; /* Posiciona o ícone dentro do container */
-    top: 50%; /* Alinha verticalmente ao meio */
-    right: 10px; /* Distância da borda direita */
-    transform: translateY(-50%); /* Centraliza verticalmente */
-    width: 20px; /* Largura do ícone */
-    height: 20px; /* Altura do ícone */
-}
-
 @keyframes fadeInDown {
     from {
         opacity: 0;

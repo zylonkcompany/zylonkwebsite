@@ -52,11 +52,51 @@
             <option value="pt-br">Português</option>
             <option value="es">Español</option>
         </select>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const languageSelector = document.getElementById("language-selector");
+    
+                // Função para carregar traduções
+                async function loadTranslations(language) {
+                    try {
+                        const response = await fetch("translations.json");
+                        const translations = await response.json();
+                        applyTranslations(translations[language]);
+                    } catch (error) {
+                        console.error("Erro ao carregar traduções:", error);
+                    }
+                }
+    
+                // Função para aplicar as traduções
+                function applyTranslations(translations) {
+                    for (const key in translations) {
+                        const element = document.getElementById(key);
+                        if (element) {
+                            element.textContent = translations[key];
+                        }
+                    }
+                }
+    
+                // Detectar idioma do navegador
+                function detectBrowserLanguage() {
+                    const lang = navigator.language || navigator.userLanguage;
+                    return lang.toLowerCase().startsWith("pt") ? "pt-br" : lang.toLowerCase().startsWith("es") ? "es" : "en";
+                }
+    
+                // Carregar o idioma preferido ou detectar idioma do navegador
+                const savedLanguage = localStorage.getItem("preferredLanguage") || detectBrowserLanguage();
+                languageSelector.value = savedLanguage;
+                loadTranslations(savedLanguage);
+    
+                // Alterar idioma ao selecionar no seletor
+                languageSelector.addEventListener("change", function() {
+                    const selectedLanguage = languageSelector.value;
+                    localStorage.setItem("preferredLanguage", selectedLanguage);
+                    loadTranslations(selectedLanguage);
+                });
+            });
+        </script>
     </header>
-    <div class="search-container">
-        <input id="search-input" class="search-bar" type="search" placeholder="search">
-        <img src="search-icon.png" class="search-icon">
-    </div>
     <main>
         <p>Welcome to the official ZylonkOS website where you can find information about ZylonkOS and the download here.</p>
         <p>We are still working, learn more on our channel: Zylonkcompany.</p>
