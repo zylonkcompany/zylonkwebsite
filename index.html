@@ -41,11 +41,11 @@
 </head>
 <body>
     <header>
-        <h1>ZylonkOS Website</h1>
-        <a href="contact.html" class="button">Contact</a>
-        <a href="about.html" class="button">About</a>
-        <a href="downloads.html" class="button">Downloads</a>
-        <a href="safiraos.html" class="button">SafiraOS</a>
+        <h1 id="welcome_message">ZylonkOS Website</h1>
+        <a href="contact.html" class="button" id="contact_button">Contact</a>
+        <a href="about.html" class="button" id="about_button">About</a>
+        <a href="downloads.html" class="button" id="downloads_button">Downloads</a>
+        <a href="safiraos.html" class="button" id="safiraos_button">SafiraOS</a>
       
         <select id="language-selector">
             <option value="en">English</option>
@@ -55,18 +55,18 @@
         <script>
             document.addEventListener("DOMContentLoaded", function() {
                 const languageSelector = document.getElementById("language-selector");
-    
+
                 // Função para carregar traduções
                 async function loadTranslations(language) {
                     try {
-                        const response = await fetch("translations.json");
+                        const response = await fetch("translations/translations.json");
                         const translations = await response.json();
                         applyTranslations(translations[language]);
                     } catch (error) {
                         console.error("Erro ao carregar traduções:", error);
                     }
                 }
-    
+
                 // Função para aplicar as traduções
                 function applyTranslations(translations) {
                     for (const key in translations) {
@@ -76,18 +76,18 @@
                         }
                     }
                 }
-    
+
                 // Detectar idioma do navegador
                 function detectBrowserLanguage() {
                     const lang = navigator.language || navigator.userLanguage;
                     return lang.toLowerCase().startsWith("pt") ? "pt-br" : lang.toLowerCase().startsWith("es") ? "es" : "en";
                 }
-    
+
                 // Carregar o idioma preferido ou detectar idioma do navegador
                 const savedLanguage = localStorage.getItem("preferredLanguage") || detectBrowserLanguage();
                 languageSelector.value = savedLanguage;
                 loadTranslations(savedLanguage);
-    
+
                 // Alterar idioma ao selecionar no seletor
                 languageSelector.addEventListener("change", function() {
                     const selectedLanguage = languageSelector.value;
@@ -98,9 +98,9 @@
         </script>
     </header>
     <main>
-        <p>Welcome to the official ZylonkOS website where you can find information about ZylonkOS and the download here.</p>
-        <p>We are still working, learn more on our channel: Zylonkcompany.</p>
-        <p>Images of the preview version:</p>
+        <p id="welcome_message_text">Welcome to the official ZylonkOS website where you can find information about ZylonkOS and the download here.</p>
+        <p id="working_message">We are still working, learn more on our channel: Zylonkcompany.</p>
+        <p id="preview_text">Images of the preview version:</p>
         <img src="zydesktop.jpg" width="550" height="359" alt="ZylonkOS Preview"> <!-- Adicionando alt para acessibilidade -->
     </main>
 </body>
