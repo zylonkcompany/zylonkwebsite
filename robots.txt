@@ -4,9 +4,6 @@ Disallow: /admin/
 Disallow: /private/
 Disallow: /cgi-bin/
 Disallow: /tmp/
-Disallow: /images/
-Disallow: /downloads/
-Disallow: /scripts/
 
 Allow: /                 # Permite o acesso a todo o conteúdo do site
 Sitemap: https://zylonkcompany.github.io/zylonkwebsite/sitemap.xml   # Especifica o local do arquivo sitemap.xml

@@ -3,7 +3,7 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, rgb(6, 255, 214), rgb(55, 87, 231));
+    background: linear-gradient(135deg, rgb(243, 150, 255), rgb(0, 47, 255));
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -20,8 +20,7 @@ header {
 }
 
 h1 {
-    font-size: 3em;
-    text-transform: uppercase;
+    font-size: 2em;
     letter-spacing: 2px;
     animation: fadeInUp 1s ease-in-out;
 }
@@ -29,6 +28,7 @@ h1 {
 p {
     margin: 10px 0;
     font-size: 1.2em;
+    font-family: "Poppins", sans-serif;
     animation: fadeInUp 1.5s ease-in-out;
 }
 
@@ -37,7 +37,7 @@ a.button {
     display: inline-block;
     padding: 15px 30px;
     text-decoration: none;
-    background: linear-gradient(135deg, cyan, pink);
+    background: linear-gradient(135deg, rgb(255, 160, 208), blue);
     color: white;
     border-radius: 30px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -48,6 +48,30 @@ a.button {
 a.button:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.search-container {
+    position: relative; /* Define um contexto para o ícone */
+    width: 300px; /* Largura total do container */
+}
+
+.search-bar {
+    width: 100%; /* Ocupa toda a largura do container */
+    height: 40px;
+    padding: 10px 40px 10px 10px; /* Espaçamento interno (ajuste para o ícone) */
+    font-size: 16px;
+    border: 2px solid #007bff;
+    border-radius: 30px;
+    outline: none;
+}
+
+.search-icon {
+    position: absolute; /* Posiciona o ícone dentro do container */
+    top: 50%; /* Alinha verticalmente ao meio */
+    right: 10px; /* Distância da borda direita */
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    width: 20px; /* Largura do ícone */
+    height: 20px; /* Altura do ícone */
 }
 
 @keyframes fadeInDown {
@@ -71,3 +95,4 @@ a.button:hover {
         transform: translateY(0);
     }
 }
+
